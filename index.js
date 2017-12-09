@@ -40,6 +40,8 @@
         // subscribe users to their private channels
         theClient.subscribeWithNotifications(channel, true, registrationId,
             function (theClient, channel, msg) {
+              console.log(channel);
+              
               // while you are browsing this page you'll be connected to Realtime
               // and receive messages directly in this callback
               console.log("Received a message from the Realtime server:", msg);
