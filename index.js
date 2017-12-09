@@ -59,15 +59,16 @@
       //         // each one ...
       //         webPushManager.forceNotification(msg);
       //       });
+        // ortchCli
    
-        ortcClient.subscribe('https://turtley60537.github.io/test_realtime/', true, function(ortc, channel, message) {
+        client.subscribe('https://turtley60537.github.io/test_realtime/', true, function(ortc, channel, message) {
           console.log(message);
           webPushManager.forceNotification(massage);
         });
 
 
       };
-      ortcClient.showNotification();
+      client.showNotification();
     
       // Establish the connection
       client.connect(RealtimeAppKey, 'JustAnyRandomToken');  
