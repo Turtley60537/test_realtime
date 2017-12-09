@@ -69,6 +69,7 @@
 
       };
       // client.showNotification();
+      
     
       // Establish the connection
       client.connect(RealtimeAppKey, 'JustAnyRandomToken');  
