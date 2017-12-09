@@ -36,6 +36,7 @@
     
       client.onConnected = function (theClient) {
         // client is connected
+        console.log(theClient);
 
         // subscribe users to their private channels
         theClient.subscribeWithNotifications(channel, true, registrationId,
