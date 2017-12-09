@@ -64,7 +64,10 @@
           console.log(message);
           webPushManager.forceNotification(massage);
         });
+
+
       };
+      ortcClient.showNotification();
     
       // Establish the connection
       client.connect(RealtimeAppKey, 'JustAnyRandomToken');  
