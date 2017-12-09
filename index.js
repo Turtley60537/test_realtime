@@ -42,6 +42,8 @@
         theClient.subscribeWithNotifications(channel, true, registrationId,
             function (theClient, channel, msg) {
               console.log(channel);
+              console.log(registrationId);
+              console.log(theClient);
               
               // while you are browsing this page you'll be connected to Realtime
               // and receive messages directly in this callback
