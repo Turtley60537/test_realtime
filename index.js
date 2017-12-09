@@ -29,6 +29,7 @@
         $("#sendButton").text("No can do ... this browser doesn't support web push notifications");
         $("#sendButton").css("background-color","red");
       };
+      console.log("webpushmanager\n"+ webPushManager);
      
       // Create Realtime Messaging client
       client = RealtimeMessaging.createClient();
