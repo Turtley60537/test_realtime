@@ -70,7 +70,7 @@
 
 
       };
-      client.showNotification();
+      // client.showNotification();
 
     
       // Establish the connection
