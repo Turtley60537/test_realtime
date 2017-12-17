@@ -97,7 +97,7 @@ function showNotification(message) {
 
   // The notification properties
   const notificationOptions = {
-    body: message,
+    body: "かめかめかめかめかめかめかめ",
     icon: 'img/kame.jpg',
     data: {
       // click_url: '/index.html' 
