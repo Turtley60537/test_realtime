@@ -100,7 +100,8 @@ function showNotification(message) {
     body: message,
     icon: 'img/realtime-logo.jpg',
     data: {
-      click_url: '/index.html'          
+      // click_url: '/index.html' 
+      click_url: "http://kameda.nkmr.io/"      
     },
     tag: Date.now()
   };
