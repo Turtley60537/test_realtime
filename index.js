@@ -82,10 +82,11 @@
 
     
       // Establish the connection
-      // client.connect(RealtimeAppKey, 'JustAnyRandomToken');  
+      // client.connect(RealtimeAppKey, 'JustAnyRandomToken');
       client.connect(RealtimeAppKey, "myAuthenticationToken");
 
-    });    
+      send();
+    });
 });
 
 // generate a GUID
