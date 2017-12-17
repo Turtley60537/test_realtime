@@ -107,6 +107,7 @@ function generateUserChannel(){
 
 // send a message to the user private channel to trigger a push notification
 function send(){
+  console.log(client);
   if (client) {
     console.log(client);
     client.send(channel, "This is a web push notification sent using the Realtime JavaScript SDK");
