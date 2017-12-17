@@ -98,10 +98,10 @@ function showNotification(message) {
   // The notification properties
   const notificationOptions = {
     body: message,
-    icon: 'img/realtime-logo.jpg',
+    icon: 'img/kame.jpg',
     data: {
       // click_url: '/index.html' 
-      click_url: "http://kameda.nkmr.io/"      
+      click_url: "http://kameda.nkmr.io/",
     },
     tag: Date.now()
   };
