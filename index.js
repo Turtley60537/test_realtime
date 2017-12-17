@@ -41,9 +41,9 @@
         // client is connected
         console.log(theClient.getUrl());
 
-        theClient.subscribe(channel, true, function(theClient, channel, msg){
-          console.log("Received message: ", msg);
-        });
+        // theClient.subscribe(channel, true, function(theClient, channel, msg){
+        //   console.log("Received message: ", msg);
+        // });
 
         // subscribe users to their private channels
         theClient.subscribeWithNotifications(channel, true, registrationId,
