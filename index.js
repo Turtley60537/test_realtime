@@ -60,7 +60,7 @@
       //         webPushManager.forceNotification(msg);
       //       });
         // ortchCli
-        client.unsubscribe(channel);
+        // client.unsubscribe(channel);
    
         client.subscribe('https://turtley60537.github.io/test_realtime/', true, function(ortc, channel, message) {
           console.log(message);
