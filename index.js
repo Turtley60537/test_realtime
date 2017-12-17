@@ -40,37 +40,37 @@
         console.log(theClient.getUrl());
 
         // subscribe users to their private channels
-        // theClient.subscribeWithNotifications(channel, true, registrationId,
-        //     function (theClient, channel, msg) {
-        //       console.log(channel);
-        //       console.log(registrationId);
-        //       console.log(theClient);
+        theClient.subscribeWithNotifications(channel, true, registrationId,
+            function (theClient, channel, msg) {
+              console.log(channel);
+              console.log(registrationId);
+              console.log(theClient);
               
-        //       // while you are browsing this page you'll be connected to Realtime
-        //       // and receive messages directly in this callback
-        //       console.log("Received a message from the Realtime server:", msg);
+              // while you are browsing this page you'll be connected to Realtime
+              // and receive messages directly in this callback
+              console.log("Received a message from the Realtime server:", msg);
 
-        //       // Since the service worker will only show a notification if the user
-        //       // is not browsing your website you can force a push notification to be displayed.
-        //       // For most use cases it would be better to change the website UI by showing a badge
-        //       // or any other form of showing the user something changed instead
-        //       // of showing a pop-up notification.
-        //       // Also consider thar if the user has severals tabs opened it will see a notification for
-        //       // each one ...
-        //       webPushManager.forceNotification(msg);
-        //     });
+              // Since the service worker will only show a notification if the user
+              // is not browsing your website you can force a push notification to be displayed.
+              // For most use cases it would be better to change the website UI by showing a badge
+              // or any other form of showing the user something changed instead
+              // of showing a pop-up notification.
+              // Also consider thar if the user has severals tabs opened it will see a notification for
+              // each one ...
+              webPushManager.forceNotification(msg);
+            });
         // ortchCli
-        client.unsubscribe(channel);
+        // client.unsubscribe(channel);
    
-        client.subscribe('https://turtley60537.github.io/test_realtime/', true, function(ortc, channel, message) {
-          console.log(message);
-          console.log(channel);
-          webPushManager.forceNotification(massage);
-        });
+        // client.subscribe('https://turtley60537.github.io/test_realtime/', true, function(ortc, channel, message) {
+        //   console.log(message);
+        //   console.log(channel);
+        //   webPushManager.forceNotification(massage);
+        // });
 
 
       };
-      client.showNotification();
+      // client.showNotification();
 
     
       // Establish the connection
