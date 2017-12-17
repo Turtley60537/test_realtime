@@ -82,8 +82,8 @@
 
     
       // Establish the connection
-      // client.connect(RealtimeAppKey, 'JustAnyRandomToken');
-      client.connect(RealtimeAppKey, "myAuthenticationToken");
+      client.connect(RealtimeAppKey, 'JustAnyRandomToken');
+      // client.connect(RealtimeAppKey, "myAuthenticationToken");
 
       send();
     });
