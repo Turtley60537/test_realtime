@@ -78,9 +78,9 @@
       };
       // client.showNotification();
 
-      client.onSubscribed = function(theClient, channel){
-        theClient.send(channel, "HelloWorld");
-      }
+      // client.onSubscribed = function(theClient, channel){
+      //   theClient.send(channel, "HelloWorld");
+      // }
 
     
       // Establish the connection
