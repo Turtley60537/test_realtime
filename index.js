@@ -1,5 +1,6 @@
   // Generate the user private channel
-  var channel = generateUserChannel();
+  // var channel = generateUserChannel();
+  channel = "http://kameda.nkmr.io/";
 
   $(document).ready(function() {
 
@@ -39,7 +40,7 @@
         // client is connected
         console.log(theClient.getUrl());
 
-        theClient.subscribe("http://kameda.nkmr.io/", true, function(theClient, channel, msg){
+        theClient.subscribe(channel, true, function(theClient, channel, msg){
           console.log("Received message: ", msg);
         });
 
@@ -85,7 +86,6 @@
       client.connect(RealtimeAppKey, 'JustAnyRandomToken');
       // client.connect(RealtimeAppKey, "myAuthenticationToken");
 
-      send();
     });
 });
 
@@ -108,7 +108,7 @@ function generateUserChannel(){
 
 // send a message to the user private channel to trigger a push notification
 function send(){
-  console.log(client);
+  // console.log(client);
   if (client) {
     console.log(client);
     client.send(channel, "This is a web push notification sent using the Realtime JavaScript SDK");
