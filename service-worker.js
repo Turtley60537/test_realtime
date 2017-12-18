@@ -100,8 +100,7 @@ function showNotification(message) {
     body: "かめかめかめかめかめかめかめ",
     icon: 'img/kame.jpg',
     data: {
-      // click_url: '/index.html' 
-      click_url: "http://kameda.nkmr.io/",
+      click_url: "http://turtley-fms.hatenablog.com/",
     },
     tag: Date.now()
   };
